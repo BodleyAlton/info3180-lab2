@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/app') }}"/>
+{% endblock %}
+
+{% block main %}
+<img src="{{url_for('static',filename='Aladin.jpg')}}"></img>
+<div id="info">
+<h1 class="name"> {{name}} </h1>
+<p class="date">{{date}}</p>
+<h5 class="info"><strong>Username:</strong> {{uname}}</h5>
+<h5 class="info"><strong>ID Number:</strong> {{ID}}</h5>
+<h5 class="info"><strong>Age:</strong> {{age}}</h5>
+<h5 class="info"><strong>Gender:</strong> {{gender}}</h5>
+<p class="pos">{{pos}}</p>
+{% endblock %}
+</div>
+{% block js %}
+<script type="text/javascript" src="{{url_for('static',filename='js/app.js')}}"></script>
+{% endblock %}

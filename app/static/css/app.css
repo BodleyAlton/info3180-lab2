@@ -1,3 +1,14 @@
 body {
     padding-top: 50px;
 }
+
+.name{
+    background-color: #c9aec8;
+}
+#info{
+    width: 20px;
+    float: right;
+}
+img{
+    float: left;
+}
